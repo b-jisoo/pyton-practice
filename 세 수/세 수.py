@@ -1,13 +1,14 @@
-A, B, C = map(int, input().split())
+A, B, C = sorted(list(map(int, input().split())))
 
 
 # print(A)
 # print(B)
 # print(C)
 
-if (A>=B and A<=C) or (A>=C and A<=B):
+if B <= A <= C:
     print(A)
-elif (B>=A and B<=C) or (B>=C and B<=A):
+elif A <= B <= C:
     print(B)
 else:
     print(C)
+
