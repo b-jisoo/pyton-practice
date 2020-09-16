@@ -1,10 +1,8 @@
-score = list(range(5))
+sum_of_score = 0
+for i in range(5):
+    score = int(input())
+    if score < 40:
+        score = 40
+    sum_of_score += score
 
-index = 0
-while(index <= 4):
-    score[index] = int(input())
-    if score[index] < 40:
-        score[index] = 40
-    index += 1
-
-print( int(sum(score)/5) )
+print(sum_of_score/5)
